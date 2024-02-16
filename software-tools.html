@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>My Website</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>D</span>evon <span>b</span>order</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="#services" data-after="Service">Services</a></li>
+            <li><a href="#projects" data-after="Projects">Projects</a></li>
+            <li><a href="#about" data-after="About">About</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+  <div class="side-bar">
+    <div class="side-bar-top">
+      <h1>Devops software tools</h1>
+    </div>
+    <ul class="side-list">
+      <li>	Linux Commands</li>
+      <li> 	Shell Scripting</li>
+      <li>	Git&GitHub</li>
+      <li>	Maven</li>
+      <li>	Jenkins</li>
+      <li>	Tomcat</li>
+      <li>	SonarQube</li>
+      <li>	Nexus</li>
+      <li>	Docker</li>
+      <li>	Docker Swarm</li>
+      <li>	Kubernetes</li>
+      <li>	Terraform</li>
+     <li>	CloudFormation</li>
+      <li>	Ansible & Puppet</li>
+      <li>	10 AWS Services</li>
+      <li>	ELK</li>
+      <li>	Grafana</li>
+      <li>	New Relic</li>
+      <li>	Nagios</li>
+      <li>	Prometheus</li>
+
+    </ul>
+  </div>
+  <div class="main-content">
+    <div class="body-head">
+      <h1>devops software tools</h1>
+    </div>
+    <div class="content">
+      <h1>Linux Commands</h1>
+      <p>Linux commands are a set of instructions that can be executed in a Linux operating system to
+         perform various tasks and manage the system. They are important in DevOps because they provide 
+         powerful tools for automating and scripting tasks, managing infrastructure, and deploying applications.
+          DevOps practitioners use Linux commands to manage servers, configure networking, install and update software, 
+          monitor system performance, and perform other essential operations. Linux commands enable efficient and 
+          consistent management of infrastructure and streamline the deployment and maintenance of applications, 
+          making them indispensable in the DevOps workflow.</p>
+
+          <div class="linux-example">
+            <p>grep "error" application.log</p>
+          </div>
+    </div>
+
+    <div class="content">
+      <h1>Shell Scripting</h1>
+      <p>Shell scripting refers to writing a series of commands in a plain text file that can 
+        be executed by the shell (command-line interpreter) in a Unix-based operating system,
+         such as Linux. Shell scripting is important in DevOps as it enables automation and streamlines 
+         repetitive tasks. By leveraging shell scripting, DevOps professionals can create scripts to 
+         configure and manage infrastructure, deploy applications, orchestrate workflows, and perform
+          various system operations. Shell scripting allows for efficient and consistent execution of 
+          complex tasks, reduces human error, and promotes reproducibility. It empowers DevOps teams to
+           automate workflows, improve productivity, and ensure reliable and scalable deployment and management 
+           of software systems..</p>
+
+          <div class="shell-example">
+            <p>#!/bin/bash
+
+              # This is a simple shell script to backup a directory
+              
+              # Define the source and destination directories
+              source_dir="/path/to/source"
+              destination_dir="/path/to/backup"
+              
+              # Create a timestamp for the backup file
+              timestamp=$(date +"%Y%m%d%H%M%S")
+              
+              # Create a compressed tarball of the source directory
+              tar -czvf "$destination_dir/backup_$timestamp.tar.gz" "$source_dir"
+              
+              # Print a success message
+              echo "Backup completed successfully!"</p>
+          </div>
+    </div>
+
+    <div class="content">
+      <h1>Git&GitHub</h1>
+      <p>Git is a distributed version control system that allows developers to track changes in their
+         codebase, collaborate with others, and manage software development projects efficiently.
+          GitHub, on the other hand, is a web-based hosting service that provides a platform for hosting 
+          Git repositories and facilitates collaboration among developers. Git and GitHub are essential in 
+          DevOps as they enable version control, code collaboration, and seamless integration with various 
+          DevOps tools and workflows. Developers can use Git to manage code versions, create branches for 
+          feature development, merge code changes, and handle conflicts. GitHub provides a centralized platform 
+          for storing and sharing repositories, managing pull requests, automating builds and deployments, 
+          and integrating with other services like continuous integration/continuous deployment (CI/CD) pipelines.
+           Git and GitHub enhance collaboration, code quality, and reliability in DevOps, enabling teams to work together 
+           efficiently and deliver software faster.</p>
+
+          <div class="git-example">
+            <p> Here's an example of how Git and GitHub can be used in a typical DevOps workflow:
+
+              Developer A creates a new feature branch in Git to work on a new feature for the project:
+              Copy
+              <span>git checkout -b feature/new-featurev</span>
+              Developer A makes changes to the codebase and commits them locally:
+              Copy
+              <span>git add .
+              git commit -m "Implemented new feature"</span>
+              Developer A pushes the feature branch to the remote repository on GitHub:
+              Copy
+              <span>git push origin feature/new-feature</span>
+              Developer A opens a pull request on GitHub, requesting to merge the feature branch into the main branch.
+              
+              Developer B reviews the code changes, leaves comments, and approves the pull request.
+              
+              The pull request is merged into the main branch by either Developer A or a designated reviewer.
+              
+              The CI/CD pipeline, integrated with GitHub, automatically triggers a build and runs tests on the updated codebase.
+              
+              If the build and tests pass, the CI/CD pipeline deploys the updated code to the staging or production environment.</p>
+          </div>
+    </div>
+
+    <div class="content">
+      <h1>Maven</h1>
+      <p>Maven is a widely used build automation and dependency management tool in the Java ecosystem. 
+        It provides a structured approach to managing project dependencies, compiling source code, running
+         tests, and packaging applications. Maven is important in DevOps as it simplifies the build and
+          release process, promotes consistency across projects, and facilitates collaboration.
+           With Maven, developers can define project configurations and dependencies in a declarative 
+           manner using a Project Object Model (POM) file. This allows for easy dependency resolution,
+            automated builds, and simplified project management. Maven integrates seamlessly with CI/CD pipelines, 
+            enabling automatic builds, testing, and deployment, thereby streamlining the software delivery process in DevOps.</p>
+
+          <div class="maven-example">
+            <p>learn how to inatall maven <a href="maven.html">here</a></p>
+          </div>
+    </div>
+
+    <div class="content">
+      <h1>Jenkins</h1>
+      <p>Jenkins is an open-source automation server that plays a crucial role in DevOps
+         by facilitating continuous integration and continuous delivery (CI/CD) pipelines.
+          It allows developers to automate the building, testing, and deployment of software applications.
+           Jenkins provides a web-based interface to configure and manage jobs, which are responsible for 
+           executing various tasks such as fetching source code from a version control system, running tests,
+            and deploying artifacts. Its importance in DevOps lies in its ability to automate repetitive tasks, 
+            enforce code quality checks, enable collaboration among team members, and provide real-time feedback
+             on the status of builds and deployments. Jenkins integrates with other DevOps tools and services, 
+             such as version control systems, build tools, and cloud platforms, making it a versatile and essential 
+             component in the DevOps toolchain.</p>
+
+          <div class="jenkins-example">
+            <p>learn how to inatall Jenkins <a href="jenkins.html">here</a></p>
+          </div>
+    </div>
+
+    <div class="content">
+      <h1>Tomcat</h1>
+      <p>Tomcat is an open-source web server and servlet container that is widely used in DevOps
+         for hosting and deploying Java-based web applications. It provides a Java Servlet and
+          JavaServer Pages (JSP) environment for running web applications, making it a critical 
+          component in the deployment of Java web projects. Tomcat is important in DevOps as it 
+          enables developers to package their web applications into a WAR (Web Application Archive)
+           file and deploy them easily on a server. It supports features such as session management,
+            load balancing, and security configurations, allowing for scalable and secure application 
+            deployment. Tomcat integrates well with other DevOps tools and practices, such as continuous 
+            integration and deployment pipelines, containerization platforms, and infrastructure orchestration 
+            tools, making it an essential part of the DevOps toolkit for hosting and managing Java web applications.</p>
+
+          <div class="tomcat-example">
+            <p>learn how to inatall Tomcat <a href="Tomcat.html">here</a></p>
+          </div>
+    </div>
+    <div class="content">
+      <h1>SonarQube</h1>
+      <p>SonarQube is an open-source platform that provides continuous code quality management and static code analysis.
+         It is crucial in DevOps for ensuring the maintainability, reliability, and security of software applications. 
+         SonarQube analyzes source code and identifies issues such as code smells, bugs, vulnerabilities, and code duplications.
+          It enforces coding standards and best practices, providing developers with actionable feedback to improve code quality.
+           SonarQube integrates seamlessly with CI/CD pipelines, enabling automatic code analysis and generating quality reports. 
+           By using SonarQube in their DevOps workflow, teams can proactively address code quality issues, reduce technical debt,
+            enhance software maintainability, and deliver high-quality applications.
+          </p>
+          <div class="sonarqube-example">
+            <p>learn how to inatall sonarqube <a href="sonarqube.html">here</a></p>
+          </div>
+    </div>
+
+    <div class="content">
+      <h1>Nexus</h1>
+      <p>Nexus is a repository manager that is widely used in DevOps for managing and distributing software artifacts.
+         It acts as a central hub for storing and organizing dependencies, binaries, and other artifacts needed for software
+          development and deployment. Nexus is important in DevOps as it provides a reliable and scalable solution for artifact 
+          management, ensuring that the right versions of dependencies are easily accessible to developers and deployment processes. 
+          It facilitates efficient collaboration, promotes reuse of artifacts, and enables faster builds and deployments.
+           Nexus also integrates with build tools and CI/CD pipelines, allowing for seamless integration and automation of artifact 
+           management tasks. By using Nexus in their DevOps practices, teams can improve development efficiency, maintain version control,
+            and streamline the software release process.</p>
+
+          <div class="nexus-example">
+            <p>learn how to inatall Nexus <a href="nexus.html">here</a></p>
+          </div>
+    </div>
+
+    <div class="content">
+      <h1>Docker</h1>
+      <p>Docker is an open-source containerization platform that allows developers to package applications 
+        and their dependencies into lightweight, portable containers. It is important in DevOps as it provides
+         a consistent and efficient way to build, deploy, and scale applications across different environments. 
+         Docker containers encapsulate the application and its dependencies, ensuring that it runs consistently 
+         on any host system. This eliminates the "works on my machine" problem and simplifies the process of deploying 
+         applications in various environments, from development to production. Docker enables DevOps teams to automate
+          the deployment process, improve scalability, and ensure consistent environments across development, testing, 
+          and production stages. It also integrates well with other DevOps tools and technologies, such as container 
+          orchestration platforms like Kubernetes, making it a vital component of modern DevOps practices.</p>
+
+          <!-- <div class="docker-example"> 
+            <p>learn how to inatall Nexus <a href="nexus.html">here</a></p>
+          </div>-->
+    </div>
+
+    <div class="content">
+      <h1>Docker Swarm</h1>
+      <p>Docker Swarm is a native container orchestration platform that allows developers and operations teams
+         to manage and scale Docker containers across multiple hosts in a cluster. It is important in DevOps as
+          it simplifies the deployment and management of containerized applications at scale. Docker Swarm provides
+           features like service discovery, load balancing, high availability, and rolling updates, enabling seamless
+            deployment and scaling of applications. It is integrated with Docker, making it easy to leverage existing 
+            Docker knowledge and workflows. With Docker Swarm, DevOps teams can automate the deployment and management 
+            of containerized applications, ensuring high availability, fault tolerance, and efficient resource utilization.
+             It enables organizations to harness the power of containerization in a production-ready and scalable manner,
+              making it a valuable tool in modern DevOps practices.</p>
+
+          <!-- <div class="linux-example">
+            <p>learn how to inatall Nexus <a href="nexus.html">here</a></p>
+          </div> -->
+    </div>
+
+    <div class="content">
+      <h1>Terraform</h1>
+      <p>Terraform is an open-source infrastructure as code (IaC) tool that allows developers and operations
+         teams to define and provision infrastructure resources in a declarative manner. It is important in 
+         DevOps as it enables the automation and management of infrastructure resources across various cloud 
+         providers and platforms. With Terraform, infrastructure can be defined using a simple configuration language,
+          allowing for version-controlled, repeatable, and consistent infrastructure provisioning. Terraform integrates 
+          with different cloud providers, allowing for the creation and management of virtual machines, storage resources,
+           networking components, and more. It also supports the concept of infrastructure as code, enabling collaboration, 
+           reproducibility, and scalability in DevOps practices. By using Terraform, DevOps teams can automate the provisioning 
+           of infrastructure, ensure consistency across environments, and achieve efficient infrastructure management in their 
+           software delivery pipelines.</p>
+
+          <!-- <div class="linux-example"> 
+            <p>learn how to inatall Nexus <a href="nexus.html">here</a></p>
+          </div>-->
+    </div>
+
+    <div class="content">
+      <h1>CloudFormation</h1>
+      <p>CloudFormation is an Amazon Web Services (AWS) service that provides infrastructure as code capabilities for
+         provisioning and managing AWS resources. It is important in DevOps as it enables the automation and standardization 
+         of infrastructure deployment in AWS environments. With CloudFormation, infrastructure can be defined using a template 
+         language, allowing for the creation and management of resources such as EC2 instances, RDS databases, load balancers,
+          and more. CloudFormation templates can be version-controlled, shared, and deployed repeatedly, ensuring consistent 
+          and reproducible infrastructure setups. CloudFormation integrates seamlessly with other AWS services and tools,
+           such as AWS CodePipeline and AWS CloudFormation StackSets, enabling continuous delivery and managing infrastructure 
+           updates at scale. By utilizing CloudFormation, DevOps teams can automate the provisioning and management of AWS resources,
+            improve infrastructure consistency, and streamline the deployment of applications in AWS environments.</p>
+
+          <!-- <div class="linux-example"> 
+            <p>learn how to inatall Nexus <a href="nexus.html">here</a></p>
+          </div>-->
+
+          <div class="content">
+            <h1>Ansible & Puppet</h1>
+            <p>Ansible and Puppet are both popular configuration management tools used in DevOps for automating the deployment 
+              and management of infrastructure and applications.
+
+              Ansible is an open-source automation tool that uses a simple and human-readable language to define tasks and 
+              configurations. It allows DevOps teams to automate provisioning, configuration, and application deployment across
+               various environments. Ansible's agentless architecture makes it lightweight and easy to set up, and it supports a 
+               wide range of systems and platforms.
+              
+              Puppet, on the other hand, is another widely used configuration management tool that uses a declarative language to
+               define desired states for infrastructure and applications. It provides a centralized approach to infrastructure management,
+                allowing DevOps teams to define configurations and policies that can be applied consistently across multiple systems.
+              
+              Both Ansible and Puppet are important in DevOps as they enable teams to automate repetitive tasks, enforce infrastructure
+               configurations, and ensure consistency and scalability. They facilitate infrastructure-as-code practices, promote collaboration,
+                and simplify the management of complex and distributed systems. These tools help streamline the deployment and management of
+                 infrastructure and applications, reducing manual effort and increasing efficiency in DevOps workflows.
+                </p>
+              
+               <!-- <div class="linux-example"> 
+                  <p>learn how to inatall Nexus <a href="nexus.html">here</a></p>
+                </div>-->
+              
+              
+              <div class="content">
+                  <h1>10 AWS Services</h1>
+                  <p>AWS (Amazon Web Services) offers a wide range of services that are important and widely used in DevOps practices.
+                     Here are 10 AWS services and their significance:
+
+                    Amazon EC2: Elastic Compute Cloud provides resizable virtual servers in the cloud. 
+                    It is crucial in DevOps for creating and managing virtual machines to run applications.
+                    
+                    Amazon S3: Simple Storage Service offers scalable object storage, enabling DevOps teams
+                     to store and retrieve large amounts of data, such as application code, binaries, and artifacts.
+                    
+                    AWS Lambda: A serverless compute service that allows developers to run code without provisioning or
+                     managing servers. It is used to execute functions in response to events, making it essential for
+                      event-driven architectures and microservices.
+                    
+                    Amazon RDS: Relational Database Service provides managed database instances for popular database engines
+                     like MySQL, PostgreSQL, and Oracle. It simplifies database administration and is used for storing application data.
+                    
+                    Amazon CloudFormation: Infrastructure as Code service that allows DevOps teams to provision and manage
+                     AWS resources using templates, enabling consistent and repeatable infrastructure deployments.
+                    
+                    AWS CodePipeline: A fully managed Continuous Integration and Continuous Delivery (CI/CD) service that
+                     automates the build, test, and deployment of applications. It integrates with other DevOps tools and 
+                     services to create end-to-end delivery pipelines.
+                    
+                    Amazon CloudWatch: Monitoring and observability service that collects and tracks metrics, logs, and events
+                     from AWS resources. It helps DevOps teams monitor application and infrastructure performance, troubleshoot
+                      issues, and trigger automated actions.
+                    
+                    AWS Elastic Beanstalk: Platform as a Service (PaaS) that simplifies the deployment and management of applications.
+                     It automatically handles infrastructure provisioning, scaling, and monitoring, allowing DevOps teams to focus on 
+                     application development.
+                    
+                    Amazon VPC: Virtual Private Cloud enables the creation of isolated virtual networks within the AWS cloud. 
+                    It is used to securely deploy applications and control network access and connectivity.
+                    
+                    AWS Identity and Access Management (IAM): A service that manages user access and permissions to AWS resources. 
+                    It ensures secure access control and enables fine-grained authorization for DevOps teams.
+                    
+                    These 10 AWS services play a vital role in DevOps by providing infrastructure management, storage, compute,
+                     monitoring, automation, and security capabilities. Leveraging these services helps streamline development
+                      processes, improve scalability, enhance security, and enable efficient deployment and management of applications 
+                      in the cloud.</p>
+            
+                      <!-- <div class="linux-example"> 
+                        <p>learn how to inatall Nexus <a href="nexus.html">here</a></p>
+                      </div>-->
+                      </div>
+
+                      <div class="content">
+                        <h1>ELK</h1>
+                        <p>ELK, also known as the ELK Stack or Elastic Stack, is a collection of open-source tools consisting of Elasticsearch,
+                           Logstash, and Kibana. ELK is important in DevOps as it provides a comprehensive solution for log management,
+                            analysis, and visualization.
+
+                          Elasticsearch is a distributed search and analytics engine that stores and indexes log data, 
+                          allowing for fast and efficient search and analysis. Logstash is a data processing pipeline that ingests 
+                          and transforms logs from various sources, making them compatible with Elasticsearch. Kibana is a powerful
+                           visualization tool that provides a user-friendly interface for exploring and analyzing log data through 
+                           interactive dashboards and visualizations.
+                          
+                          By using the ELK Stack, DevOps teams can centralize log data, gain insights into application performance, 
+                          detect anomalies, and troubleshoot issues. It facilitates real-time monitoring, root cause analysis, and
+                           proactive incident response. ELK supports fast and efficient log analysis at scale, helping teams identify
+                            trends, optimize infrastructure, and improve application reliability. It is an essential tool in the DevOps
+                             toolbox for managing and monitoring complex distributed systems.
+                            </p>
+                  
+                            <!-- <div class="linux-example"> 
+                              <p>learn how to inatall Nexus <a href="nexus.html">here</a></p>
+                            </div>-->
+
+                            <div class="content">
+                              <h1>Grafana</h1>
+                              <p>Grafana is an open-source analytics and visualization platform that is important in DevOps for monitoring and
+                                 observability. It allows DevOps teams to create interactive dashboards and visualizations by connecting to 
+                                 various data sources, including time series databases, logs, and metrics. Grafana enables real-time monitoring,
+                                  performance analysis, and alerting, providing valuable insights into system health and performance. With its 
+                                  flexible and customizable features, Grafana helps DevOps teams monitor and optimize infrastructure, troubleshoot 
+                                  issues, and make data-driven decisions to ensure reliable and efficient application deployments. It plays a critical
+                                   role in visualizing and analyzing complex data sets, improving observability, and facilitating effective monitoring 
+                                   and analysis in DevOps practices.</p>
+                        
+                                  <!-- <div class="linux-example"> 
+                                    <p>learn how to inatall Nexus <a href="nexus.html">here</a></p>
+                                  </div>-->
+
+                                  <div class="content">
+                                    <h1>New Relic</h1>
+                                    <p>New Relic is a powerful application performance monitoring (APM) tool that is important in DevOps for
+                                       monitoring and optimizing the performance of applications and infrastructure. It provides real-time 
+                                       insights into application performance, end-user experience, and infrastructure metrics. New Relic allows
+                                        DevOps teams to identify bottlenecks, troubleshoot issues, and optimize application performance by monitoring 
+                                        key metrics like response times, error rates, and resource utilization. It also offers features like 
+                                        distributed tracing, anomaly detection, and alerting, enabling proactive monitoring and ensuring high
+                                         availability and reliability of applications. New Relic helps DevOps teams streamline troubleshooting,
+                                          improve application performance, and deliver exceptional user experiences by providing deep visibility 
+                                          into the entire application stack, from the frontend to the backend systems.</p>
+                              
+                                        <!-- <div class="linux-example"> 
+                                          <p>learn how to inatall Nexus <a href="nexus.html">here</a></p>
+                                        </div>-->
+                                        <div class="content">
+                                          <h1>Nagios</h1>
+                                          <p>Nagios is an open-source monitoring tool that is important in DevOps for proactive monitoring and
+                                             alerting of IT infrastructure components. It allows DevOps teams to monitor the health and performance
+                                              of network devices, servers, applications, and services. Nagios regularly checks predefined metrics and
+                                               triggers alerts when thresholds are exceeded or anomalies are detected. It provides a centralized view of 
+                                               the entire infrastructure, enabling teams to identify and resolve issues quickly, minimize downtime, 
+                                               and ensure service availability. Nagios also supports extensibility through plugins, allowing for custom 
+                                               monitoring and integration with other tools. Its importance lies in enabling efficient monitoring, 
+                                               proactive incident response, and infrastructure stability in a DevOps environment.</p>
+                                    
+                                              <!-- <div class="linux-example"> 
+                                                <p>learn how to inatall Nexus <a href="nexus.html">here</a></p>
+                                              </div>-->
+                                              </div>
+                                              
+                                              <div class="content">
+                                    <h1>Prometheus</h1>
+                                    <p>Prometheus is an open-source monitoring and alerting system that is important in DevOps for collecting 
+                                      and analyzing metrics from various targets in real-time. It follows a pull-based model, where it scrapes 
+                                      metrics from the configured targets at regular intervals. Prometheus stores the collected data in a time-series
+                                       database, allowing for efficient querying and analysis. It provides a flexible query language and powerful
+                                        visualization capabilities. Prometheus is widely used in DevOps for monitoring infrastructure, application 
+                                        performance, and service health. Its importance lies in its ability to provide real-time insights, detect anomalies,
+                                         and trigger alerts based on defined thresholds. Prometheus helps DevOps teams maintain the reliability and availability 
+                                         of their applications and infrastructure by allowing them to proactively monitor and respond to issues, optimize performance, 
+                                         and ensure the overall health of their systems.</p>
+                              
+                                        <!-- <div class="linux-example"> 
+                                          <p>learn how to inatall Nexus <a href="nexus.html">here</a></p>
+                                        </div>-->
+                                        </div>
+
+                                        <div class="conclution">
+                                         <p> For more information and to gain a deeper understanding of DevOps, we invite you to join our landmark DevOps class.
+                                           By clicking on the provided link <a href="https://mylandmarktech.com/">DevOps-class</a>, you'll have the opportunity to access valuable resources and engage in comprehensive
+                                            learning sessions that cover various aspects of DevOps practices. We believe this class will equip you with the knowledge
+                                             and skills necessary to excel in the world of DevOps. </p>
+                                        </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maven-instalation.com</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="header">
+            <section id="header">
+                <div class="header container">
+                  <div class="nav-bar">
+                    <div class="brand">
+                      <a href="#hero">
+                        <h1><span>D</span>evon <span>b</span>order</h1>
+                      </a>
+                    </div>
+                    <div class="nav-list">
+                      <div class="hamburger">
+                        <div class="bar"></div>
+                      </div>
+                      
+                      <ul>
+                        <li><a href="#hero" data-after="Home">Home</a></li>
+                        <li><a href="#services" data-after="Service">Services</a></li>
+                        <li><a href="#projects" data-after="Projects">Projects</a></li>
+                        <li><a href="#about" data-after="About">About</a></li>
+                        <li><a href="#contact" data-after="Contact">Contact</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- end of head -->
+            
+              <!-- start of main content -->
+              
+             
+                  <div>
+                    <h1 class="text1">How to install maven <br>on Windows </h1>
+                  </div>
+            
+                  <div class="main-content">
+                    <h1>Introduction</h1>
+                    <p>Apache Maven is a build-automation tool designed to provide a comprehensive and easy-to-use way of developing Java applications. It uses a POM (Project Object Model) approach to create a standardized development environment for multiple teams.
+                      In this tutorial, we will show you how to install Apache Maven on a system running Windows.
+                      
+                      <h2>Prerequisites</h2>
+                      <p>
+                      •	A system running Windows.
+                      •	A working Internet connection.
+                      •	Access to an account with administrator privileges.
+                      •	Access to the command prompt.
+                      •	A copy of Java installed and ready to use, with the JAVA_HOME environment variable set up
+                       (learn how to set up the JAVA_HOME environment variable in our guide to installing Java on Windows).</p>
+                      <h1>How to Install Maven on Windows</h1>
+                      Follow the steps outlined below to install Apache Maven on Windows.</p>
+                      <h1>Step 1: Download Maven Zip File and Extract</h1>
+                      <p>1. Visit the Maven download page and download the version of Maven you want to install. The Files section contains the archives of the latest version. Access earlier versions using the archives link in the Previous Releases section.
+                      2. Click on the appropriate link to download the binary zip archive of the latest version of Maven. As of the time of writing this tutorial, that is version 3.8.4.
+                       3.8.4.
+                      </p>
+                    <img src="img/maven1.png" alt="">
+                    <p>3. Since there is no installation process, extract the Maven archive to a directory of your 
+                      choice once the download is complete.
+                       For this tutorial, we are using C:\Program Files\Maven\apache-maven-3.8.4.</p>
+                       <img src="img/maven2.png" alt="">
+                       <h1>Step 2: Add MAVEN_HOME System Variable</h1>
+                       <p>1. Open the Start menu and search for environment variables.
+                        2. Click the Edit the system environment variables result.
+                        </p>
+                       <img src="img/maven3.png" alt="">
+                       <p>3. Under the Advanced tab in the System Properties window, click Environment Variables.</p>
+
+                       <img src="img/maven4.png" alt="">
+                       <p>4. Click the New button under the System variables section to add a new system environment variable.</p>
+                       <img src="img/maven5.png" alt="">
+                       <p>5. Enter MAVEN_HOME as the variable name and the path to the Maven directory as the variable value. Click OK to save the new system variable.</p>
+
+                       <img src="img/maven6.png" alt="">
+                       <h1>Step 3: Add MAVEN_HOME Directory in PATH Variable</h1>
+                       <p>1. Select the Path variable under the System variables section in the Environment Variables window.
+                         Click the Edit button to edit the variable</p>
+                         <img src="img/maven7.png" alt="">
+                            <p>2. Click the New button in the Edit environment variable window.</p>
+                            <img src="img/maven8.png" alt="">
+                            <p>3. Enter %MAVEN_HOME%\bin in the new field. Click OK to save changes to the Path variable.</p>
+                            <img src="img/maven6.png" alt="">
+                            <p>Note: Not adding the path to the Maven home directory to the Path variable causes the 'mvn' is not recognized as an internal or external command, operable program or batch file error when using the mvn command.
+                              4. Click OK in the Environment Variables window to save the changes to the system variables.
+                              </p>
+                            <img src="img/maven6.png" alt="">
+                            <h1>Step 4: Verify Maven Installation</h1>
+                            <p>In the command prompt, use the following command to verify the installation by checking the current version of Maven:
+                              mvn -version
+                              </p>
+                              <img src="img/maven6.png" alt="">
+                              <h1>Conclusion</h1>
+                              <p>After reading this tutorial, you should have a copy of Maven installed and ready to use on your Windows system.</p>
+
+                        </div>
+                      </div>
+                  </body>
+                  </html>
